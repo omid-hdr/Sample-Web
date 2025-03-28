@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>محاسبه‌گر فرمولی</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>محاسبه‌گر فرمولی</h2>
+    
+            <label for="fee">قیمت واحد:</label>
+            <br>
+            <input type="text" id="fee" placeholder="واحد قیمت">
+            <br>
+            <label for="count">تعداد:</label>
+            <br>
+            <input type="text" id="count" placeholder="تعداد">
+            <br>
+            <label for="discount">تخفیف:</label>
+            <br>
+            <input type="text" id="discount" placeholder="تخفیف">
+    
+            <div class="toggle-container">
+                <span>محصول خارجی</span>
+                <label class="switch">
+                    <input type="checkbox" id="isForeign">
+                    <span class="slider"></span>
+                </label>
+                <span>محصول داخلی</span>
+            </div>
+    
+            <div class="results">
+                <p id="result-raw">هزینه کل بدون تخفیف: -- تومان</p>
+                <p id="result-final">هزینه نهایی: -- تومان</p>
+            </div>
+    
+            <div class="notes">
+                <p id="discount-note" style="display: none; color: green;">✅ تخفیف عمده ۱۰٪ اعمال شد.</p>
+                <p id="tax-note" style="display: none; color: red;">⚠️ مالیات ۱۰٪ برای محصول خارجی اعمال شد.</p>
+            </div>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
